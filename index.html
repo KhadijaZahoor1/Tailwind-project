@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,300&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,300&display=swap" rel="stylesheet">
+    <title>Tailwind-site</title>
+</head>
+
+
+<body>
+    <nav class="absolute w-full text-white">
+        <div class="container flex mx-auto justify-between py-4 px-8">
+           <div class="text-2xl font-medium font-[Montserrat]">
+                <a href="index.html"><img src="./images/logo.png"></a>
+           </div>
+           <button class="text-white border border-white border-solid px-2 rounded-sm lg:hidden ml-auto nav-toggler" data-target="#navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+           </button>
+            <div class="hidden top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+                <ul class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-col space-x-6 text-base font-normal font-[Montserrat]">
+                    <li><a href="#" class="">HOME</a></li>
+                    <li><a href="#" class="">ABOUT</a></li>
+                    <li><a href="#" class="">CONTACT</a></li>
+                    <li><a href="#" class="border-l pl-5">CALL NOW FOR A CONSULT
+                        <span class="text-emerald-400 pl-1">123.456.7890</span>
+                    </a></li>
+                    <!-- <li><a href="#" class="bg-sky-800 py-2 text-white px-6 ml-6">Login</a></li>
+                    <li><a href="#" class="bg-sky-800 py-2 text-white px-6">Signup</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+<div class="lg:bg-[url('./images/banner-img.png')] lg:bg-cover lg:w-full lg:h-screen lg:bg-no-repeat py-28 sm:bg-[url('./images/t-banner.jpg')] sm:bg-cover sm:w-auto sm:h-auto bg-mb">
+   <div class="container mx-auto flex md:flex-row flex-col">
+
+        <div class="text-white font-[Montserrat] flex flex-col justify-center">
+
+            <h1 class="font-bold text-6xl lg:text-left sm:text-center">GET AN <br><span>INTERVENTION</span></h1>
+            <p class="font-normal text-sm mt-3 pr-20 lg:text-left lg:pl-0 sm:text-center sm:px-8">Showing greater respect to older adults can be done in several ways : 
+                acknowledging and putting to use the talents and skills of older adults; creating 
+                intergenerational initiatives; and allowing older adults to stay active and independent 
+                for as long as possible.</p>
+        </div>
+
+        <div class="bg-gradient-to-b from-teal-800 via-teal-700 to-teal-transparent shadow-2xl rounded-md border-none py-16 px-7 sm:mt-2 mb-form">
+            <h1 class="text-white text-center text-2xl font-bold">Contact Us</h1>
+                <form class="mt-8">
+                    <div class="flex flex-row justify-center lg:space-x-2 sm:space-x-2 my-2">
+                        <input class="p-4 placeholder:text-white font-[Montserrat] bg-transparent border border-solid border-x border-white rounded-md text-base font-normal not-italic"
+                        placeholder="First Name">
+                        <input class="p-4 placeholder:text-white font-[Montserrat] bg-transparent border border-solid border-x border-white rounded-md text-base font-normal not-italic"
+                        placeholder="Last Name">
+                    </div>
+                    <div class="flex flex-row justify-center lg:space-x-2 sm:space-x-2">
+                        <input class="p-4 placeholder:text-white font-[Montserrat] bg-transparent border border-solid border-x border-white rounded-md text-base font-normal not-italic"
+                        placeholder="Business Email">
+                        <input class="p-4 placeholder:text-white font-[Montserrat] bg-transparent border border-solid border-x border-white rounded-md text-base font-normal not-italic"
+                        placeholder="Company">
+                    </div>
+                  <div class="flex justify-center lg:my-4 sm:my-4 label-w">
+                    <label class="border border-x border-white border-solid rounded-md text-white lg:w-full p-4 sm:w-[520px]">Country
+                        <select class="bg-transparent float-right text-white outline-transparent">
+                            <option class=""></option>
+                            <option class="bg-transparent">Pakistan</option>
+                            <option class="bg-transparent">US</option>
+                            <option class="bg-transparent">Canada</option>
+                            <option class="bg-transparent">UAE</option>
+                        </select>
+                    </label>
+                  </div>
+                    <div class='flex items-center justify-center btn'>
+                        <button class="bg-[#5BC8AF] text-white font-normal font-[Montserrat] px-12 py-3 rounded-md"> <img class="inline-block" src="./images/flyplain.png"> Submit</button>
+                    </div>
+                </form>
+        </div>
+
+   </div>
+</div>
+
+<div class="main-section bg-[#F5F5F5] pb-24">
+
+    <section class="threeimgs">
+        <div class="container mx-auto flex gap-6 lg:py-32 sm:py-24">
+            <div class="w-1/3">
+                <img class="w-full rounded-md" src="./images/mark1.svg">
+            </div>
+            <div class="w-1/3">
+                <img class="w-full rounded-md" src="./images/mark2.svg">
+            </div>
+            <div class="w-1/3">
+                <img class="w-full rounded-md" src="./images/mark3.svg">
+            </div>
+        </div>
+    </section>
+    
+    <section class="weunderstand">
+        <div class="container mx-auto flex">
+            <div class=""><h1 class="text-[#333333] font-[Montserrat] font-bold text-4xl">WE <span>UNDERSTAND</span></h1></div> 
+            <div class="lg:w-2/3 sm:w-5/12 border-b-2 border-[#EAEAEA]"></div>
+        </div>
+    </section>
+    
+    <section class="weunderstand-mb">
+        <div class="container mx-auto flex gap-6 mt-9 sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-3">
+            <div class="">
+               <p class="text-[#333333] font-[Montserrat] font-normal text-sm leading-6">Older adults want to play active and meaningful roles in their lives, including as part of a social network, a neighborhood, and a community. Service providers and policymakers must consider that a lack of sense of purpose can become problematic as people age.  Engaging them in leisure activities and volunteer work is important.</p>
+            </div>
+            <div class="">
+                <p class="text-[#333333] font-[Montserrat] font-normal text-sm leading-6">Older adults want to stay active and contribute to society in a reciprocal manner (meaning that they want to exchange their services and skills with others for the mutual benefit of the neighborhood or community). Qualitative and quantitative studies published from 2005 to 2016 examining the social needs of older adults were eligible for inclusion.</p>
+            </div>
+            <div class="">
+                <p class="text-[#333333] font-[Montserrat] font-normal text-sm leading-6">To stimulate social contacts, neighborhood initiatives can be developed. Social meeting places, such as pubs and churches can help to foster the development of close and peripheral relationships.</p>
+               <div class="mt-3 lg:visible sm:hidden">
+                    <button class="px-14 py-3 border border-solid border-x border-[#5BC8AF] text-[#5BC8AF]"> 92% Success Rate <img class="inline-block" src="./images/Arrow (Stroke).svg"></button>
+               </div>
+            </div>
+            <div class="mt-3 sm:visible lg:hidden mb-hide">
+                <button class="px-14 py-3 border border-solid border-x border-[#5BC8AF] text-[#5BC8AF]"> 92% Success Rate <img class="inline-block" src="./images/Arrow (Stroke).svg"></button>
+           </div>
+        </div>
+    </section>
+
+</div>
+
+
+<div class="splide">
+    <div class="splide__track -mt-10">
+      <ul class="splide__list">
+        <li class="splide__slide">
+            <div class="testimonial">
+                <div class="container mx-auto flex">
+                    <div class="lg:w-1/3 lg:flex lg:justify-center sm:w-1/3 sm:flex sm:justify-center mb-img-testi">
+                        <img class="rounded-l-md sm:rounded-l-md" src="./images/testimoni-img.svg">
+                    </div>
+                    <div class="w-2/3 bg-[#194D44] text-white lg:pt-16 lg:px-12 sm:py-5 sm:px-8 rounded-r-md testi-greenblock">
+                        <h4 class="font-[Montserrat] font-bold text-2xl">Abbie Harvey <span class="float-right text-xl text-[#2A7C6B] -mt-4"><img src="./images/quoteicon.svg"></span></h4>
+                        <p class="font-[Montserrat] font-normal text-lg leading-7 mt-4 italic">I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments. Older people need attention, love and care that they truly deserve.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="splide__slide">
+           <div class="testimonial">
+                <div class="container mx-auto flex">
+                    <div class="lg:w-1/3 lg:flex lg:justify-center sm:w-1/3 sm:flex sm:justify-center mb-img-testi">
+                        <img class="lg:rounded-l-md sm:rounded-l-md" src="./images/testimoni2.svg">
+                    </div>
+                    <div class="w-2/3 bg-[#194D44] text-white lg:pt-16 lg:px-12 sm:py-5 sm:px-8 rounded-r-md testi-greenblock">
+                        <h4 class="font-[Montserrat] font-bold text-2xl">Abbie Harvey <span class="float-right text-xl text-[#2A7C6B] -mt-4"><img src="./images/quoteicon.svg"></span></h4>
+                        <p class="font-[Montserrat] font-normal text-lg leading-7 mt-4 italic">I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments. Older people need attention, love and care that they truly deserve.</p>
+                    </div>
+                </div>
+           </div>
+        </li>
+        <li class="splide__slide">
+            <div class="testimonial">
+                <div class="container mx-auto flex">
+                    <div class="lg:w-1/3 lg:flex lg:justify-center sm:w-1/3 sm:flex sm:justify-center mb-img-testi">
+                        <img class="lg:rounded-l-md sm:rounded-l-md" src="./images/testimoni3.svg">
+                    </div>
+                    <div class="w-2/3 bg-[#194D44] text-white lg:pt-16 lg:px-12 sm:py-5 sm:px-8 rounded-r-md testi-greenblock">
+                        <h4 class="font-[Montserrat] font-bold text-2xl">Abbie Harvey <span class="float-right text-xl text-[#2A7C6B] -mt-4"><img src="./images/quoteicon.svg"></span></h4>
+                        <p class="font-[Montserrat] font-normal text-lg leading-7 mt-4 italic">I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments. Older people need attention, love and care that they truly deserve.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+      </ul>
+    </div>
+</div>
+
+<section class="weorganize">
+    <div class="container mx-auto flex mt-32">
+        <div class="lg:w-2/3 h-width"><h1 class="text-[#333333] font-[Montserrat] font-bold text-4xl">WE <span>CAN ORGANIZE EVERYTHING</span></h1></div>
+        <div class="lg:w-2/3 border-b-2 border-[#EAEAEA]"></div>
+    </div>
+</section>
+
+<section class="weorganize-mb">
+    <div class="container mx-auto flex gap-6 mt-9 mb-9">
+        <div class="lg:w-1/3">
+           <p class="text-[#333333] font-[Montserrat] font-normal text-sm leading-6 italic"> <b>Interventions</b> should focus on older adult’s desire for connectedness, participation and independence.</p>
+        </div>
+        <div class="lg:w-1/3">
+            <p class="text-[#333333] font-[Montserrat] font-normal text-sm leading-6">Loneliness and social isolation are growing public health concerns in our aging society. Whilst these experiences occur across the life span, 50% of individuals aged over 60 are at risk of social isolation and one-third will experience some degree of loneliness later in life. It is vital to reduce loneliness and social isolation among older adults.</p>
+        </div>
+        <div class="lg:w-1/3">
+            <p class="text-[#333333] font-[Montserrat] font-normal text-sm leading-6">The methodology framework proposed by Asked and O’Malley and further developed by Levac, et al. was used to guide the scoping review process. A total of 33 reviews met the inclusion criteria, evaluating a range of interventions targeted at older people residing in the community or institutionalised settings.</p>
+        </div>
+    </div>
+</section>
+
+<div class="points mb-24">
+
+    <section class="lg:visible sm:hidden mob-points-hide">
+        <div class="container mx-auto flex gap-6 mt-9 mb-9">
+            <div class="w-1/3 border-solid border border-x border-[#5BC8AF] flex justify-center items-center py-9">
+               <p class="text-[#333333] font-[Montserrat] font-bold text-lg leading-6"> Needs Assesssment</p>
+            </div>
+            <div class="w-1/3 border-solid border border-x border-[#5BC8AF] flex justify-center items-center py-9">
+                <p class="text-[#333333] font-[Montserrat] font-bold text-lg leading-6">Treatment Planning & Placement</p>
+            </div>
+            <div class="w-1/3 border-solid border border-x border-[#5BC8AF] flex justify-center items-center py-9">
+                <p class="text-[#333333] font-[Montserrat] font-bold text-lg leading-6"> Transportation & Logistics</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto flex gap-6 mt-9 mb-9">
+            <div class="w-1/3 border-solid border border-x border-[#5BC8AF] flex justify-center items-center py-9">
+               <p class="text-[#333333] font-[Montserrat] font-bold text-lg leading-6"> Insurance Advocacy</p>
+            </div>
+            <div class="w-1/3 border-solid border border-x border-[#5BC8AF] flex justify-center items-center py-9">
+                <p class="text-[#333333] font-[Montserrat] font-bold text-lg leading-6"> Employment Advocacy</p>
+            </div>
+            <div class="w-1/3 border-solid border border-x border-[#5BC8AF] flex justify-center items-center py-9">
+                <p class="text-[#333333] font-[Montserrat] font-bold text-lg leading-6"> Aftercare Planning</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="lg:hidden sm:visible mob-points-visi">
+        <div class="container mx-auto mt-9 mb-9 grid grid-cols-2 gap-4">
+            <div class="border-solid border border-x border-[#5BC8AF] flex justify-center items-center py-9">
+               <a class="text-[#333333] font-[Montserrat] font-bold text-lg leading-6"> Needs Assesssment</a>
+            </div>
+            <div class="border-solid border border-x border-[#5BC8AF] flex justify-center items-center py-9 pl-12">
+                <p class="text-[#333333] font-[Montserrat] font-bold text-lg leading-6">Treatment Planning & Placement</p>
+            </div>
+            <div class="border-solid border border-x border-[#5BC8AF] flex justify-center items-center py-9">
+                <p class="text-[#333333] font-[Montserrat] font-bold text-lg leading-6"> Transportation & Logistics</p>
+            </div>
+            <div class="border-solid border border-x border-[#5BC8AF] flex justify-center items-center py-9">
+                <p class="text-[#333333] font-[Montserrat] font-bold text-lg leading-6"> Insurance Advocacy</p>
+             </div>
+             <div class="border-solid border border-x border-[#5BC8AF] flex justify-center items-center py-9">
+                 <p class="text-[#333333] font-[Montserrat] font-bold text-lg leading-6"> Employment Advocacy</p>
+             </div>
+             <div class="border-solid border border-x border-[#5BC8AF] flex justify-center items-center py-9">
+                 <p class="text-[#333333] font-[Montserrat] font-bold text-lg leading-6"> Aftercare Planning</p>
+             </div>
+        </div>
+    </section>
+   
+
+</div>
+
+<div class="flex md:flex-row flex-col">
+    <div class="lg:w-1/2 bg-gradient-to-b from-[#305D52] to-[#153F38] text-white py-24">
+        <h1 class="text-5xl lg:leading-10 sm:leading-10 font-bold font-[Montserrat] text-center">WATCH <span>THE VIDEO</span></h1>
+       <div class="grid lg:px-36 mt-12 sm:px-10 mb-videopoints">
+            <div class="flex py-2">
+                <div>
+                    <h4 class="font-[Montserrat] text-2xl font-bold leading-8 flex"> <img class="pr-2" src="./images/Checkmark.svg"> Need Assessment</h4>
+                    <p class="font-[Montserrat] text-lg font-normal leading-7">The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating the Consumer Voices for Coverage program.</p>
+                </div>
+            </div>
+            <div class="flex py-2">
+                <div>
+                    <h4 class="font-[Montserrat] text-2xl font-bold leading-8 flex">  <img class="pr-2" src="./images/Checkmark.svg"> Insurance Advocacy</h4>
+                    <p class="font-[Montserrat] text-lg font-normal leading-7">We are committed to advocating for appropriate coverage and payment policies.</p>
+                </div>
+            </div>
+            <div class="flex py-2">
+                <div>
+                    <h4 class="font-[Montserrat] text-2xl font-bold leading-8 flex">  <img class="pr-2" src="./images/Checkmark.svg"> Treatment Planning & Placement</h4>
+                    <p class="font-[Montserrat] text-lg font-normal leading-7">Patients can better understand medical procedures, discharge instructions, etc.</p>
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="lg:w-1/2">
+        <img class="w-full" src="./images/MaskGroup.jpg">
+    </div>
+</div>
+
+<footer class="bg-[#EAEAEA]">
+    <div class="container flex mx-auto py-9 text-[#757575] md:flex-row flex-col">
+        <div class="lg:text-left text-sm lg:w-1/2 font-normal font-[Montserrat] sm:text-center">
+            @2021 Get an Intervention Inc. All rights reserved.
+        </div>
+        <div class="lg:text-right text-sm lg:w-1/2 font-normal font-[Montserrat] sm:text-center">
+            Privacy Policy  |  Terms of use  |  Site Map
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+
+        $(document).ready(function()
+        {
+            $(".nav-toggler").each(function(_, navToggler)
+            {
+                var target = $(navToggler).data("target");
+                $(navToggler).on("click", function() {
+                    $(target).animate({})
+                    height: "toggler";
+                })
+            })
+        })
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('.splide').mount();
+      new WOW().init();
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script src="js/wow.min.js"></script>
+
+</body>
+</html>
